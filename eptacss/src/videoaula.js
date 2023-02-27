@@ -2,7 +2,6 @@ import logo from './logo.png';
 import './App.css';
 import { Card } from './components/Card';
 import { labels } from './labels';
-import { Routes } from 'react-router-dom';
 
 function App() {
   return (
@@ -12,12 +11,9 @@ function App() {
       </header>
       <div className="container">
         <div className="title">
-          <p className="description">
-            Aqui você encontra tudo o que precisa para ter sucesso em nossas
-            ferramentas
-          </p>
+          <p className="description">essa é a página de videoaulas</p>
         </div>
-        <div className="grid cards">
+        <div className="gridCards">
           {labels.map((cardObj) => (
             <Card
               title={cardObj.titulo}
@@ -30,8 +26,7 @@ function App() {
           <button className="ButtonFooterOptions">Atualizações</button>
           <button className="ButtonFooterOptions">Perguntas frequentes</button>
         </div>
-        <footer className="footer"></footer>
-        {/* <Routes /> */}
+        <footer></footer>
       </div>
     </div>
   );

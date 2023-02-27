@@ -1,3 +1,5 @@
+import './index.css';
+
 export const Card = ({ title, descricao, link }) => {
   return (
     <div className="card">
