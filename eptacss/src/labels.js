@@ -1,6 +1,6 @@
 export const labels = [
   {
-    titulo: 'Videoaulas',
+    titulo: 'Primeiros Passos',
     descricao:
       'Acesse agora videoaulas para você aprender definitivamente todas as funcionalidades da plataforma, aulas separadas por módulos',
     link: '/videoaula',

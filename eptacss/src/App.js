@@ -27,7 +27,7 @@ function App() {
           ))}
         </div>
         <div className="footerOptions">
-          <button className="ButtonFooterOptions">Atualizações</button>
+          <button className="ButtonFooterOptions">Novidades do produto</button>
           <button className="ButtonFooterOptions">Perguntas frequentes</button>
         </div>
         <footer className="footer"></footer>
