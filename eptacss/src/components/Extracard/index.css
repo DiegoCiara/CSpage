@@ -1,5 +1,5 @@
 
-.card {
+.card.epta {
   display: grid;
   grid-template-columns: repeat(2, 15% 85%);
   margin: 2%;
@@ -12,9 +12,32 @@
     /* transition: background 200ms, border 200ms; */
   text-align: left;
   justify-content: space-between;
-  width: 44vh;
-  height: 22vh;
+  width: 50vh;
+  height: 80vh;
+  background-color: #ffffff;
+
 }
+.card.eventos {
+  display: grid;
+  grid-template-columns: repeat(2, 15% 85%);
+  margin: 2%;
+  padding: 1rem;
+  width: 19.8ch;
+  border-radius: 7px;
+  background: rgba(var(--card-rgb), 0);
+  border: 1px solid;
+  border-color: #c1c1c1;
+    /* transition: background 200ms, border 200ms; */
+  text-align: left;
+  justify-content: space-between;
+  width: 50vh;
+  height: 80vh;
+  background-color: #ffffff;
+}
+
+
+
+
 .icone1{
   background-color: rgb(0, 93, 193);
   color: #f3f2f2;
