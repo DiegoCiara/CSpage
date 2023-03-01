@@ -4,6 +4,7 @@ export const labels = [
     descricao:
       'Acesse agora videoaulas para você aprender definitivamente todas as funcionalidades da plataforma, aulas separadas por módulos',
     link: '/videoaula',
+    
   },
   {
     titulo: 'Plantão do sucesso',
@@ -39,34 +40,46 @@ export const labels = [
 
 export const events = [
   {
-    titulo: 'EPTA CS',
+    dia: '10',
+    mes: 'fev',
+    titulo: 'Apresentação do Kamino CRM',
+    descricao: 'AUTOPLANOS',
     link: '',
   },
   {
-    titulo: 'Próximos eventos',
+    dia: '12',
+    mes: 'fev',
+    titulo: 'Atualização do Naboo',
+    descricao: 'EPTA Tecnologia',
+    link: '',
+  },
+  {
+    dia: '18',
+    mes: 'fev',
+    titulo: 'Mentoria',
+    descricao: 'AUTOPLANOS',
+    link: '',
+  },
+  
+];
+  export const talkUs = [
+  {
+    titulo: 'Nossos Produtos',
+    link: '',
+  },
+  {
+    titulo: 'Ouvidoria',
+    link: '',
+  },  
+  {
+    titulo: 'Aprenda mais',
+    link: '',
+  },
+  {
+    titulo: 'Nossos Canais',
     link: '',
   }
-
-  ]
-  export const talkUs = [
-    {
-      titulo: 'Nossos Produtos',
-      link: '',
-    },
-    {
-      titulo: 'Ouvidoria',
-      link: '',
-    },  
-    {
-      titulo: 'Aprenda mais',
-      link: '',
-    },
-    {
-      titulo: 'Nossos Canais',
-      link: '',
-    }
-  
-    ]
+];
   
 
 // Plantão do sucesso

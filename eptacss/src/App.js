@@ -1,19 +1,20 @@
 import logo from './logo.png';
+import image from './image.png';
 import './App.css';
 import { MiniCard } from './components/Minicard';
 import { Card } from './components/Card';
 import { labels, talkUs } from './labels';
 import { EptaCs, Eventos } from './components/Extracard';
+import { FaAccessibleIcon } from 'react-icons/fa';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <div className="header"></div>
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
       </header>
-      <img src={logo} className="App-logo" alt="logo" />
-
+      {/* <img src={logo} className="App-logo" alt="logo" /> */}
+      <img src={image} className="App-logo" alt="image" />
       <div className="container">
         <div className="title">
           <h1 className="subtitle">Expreriência completa de ponta a ponta</h1>
@@ -28,6 +29,7 @@ function App() {
               title={cardObj.titulo}
               descricao={cardObj.descricao}
               link={cardObj.link}
+              icon={cardObj.icon}
             />
           ))}
         </div>
@@ -38,12 +40,6 @@ function App() {
         <EptaCs/>
         <Eventos/>
       </div>
-        {/* <div className="footerOptions">
-          <button className="ButtonFooterOptions">Novidades do produto</button>
-          <button className="ButtonFooterOptions">Perguntas frequentes</button>
-        </div>
-        <footer className="footer"></footer> */}
-        {/* <Routes /> */}
       </div>
 
       <div className="container third">
@@ -59,14 +55,28 @@ function App() {
             />
           ))}
         </div>
+      </div>
+      <div className="container third">
+        <div className="title">
+          <h1 className="subtitle third">Accordion</h1>
+        </div>
+        <div className="grid minicards">
+          {/* {talkUs.map((cardObj) => (
+            <MiniCard
+              title={cardObj.titulo}
+              descricao={cardObj.descricao}
+              link={cardObj.link}
+            />
+          ))} */}
+        </div>
 
+      </div>
         {/* <div className="footerOptions">
           <button className="ButtonFooterOptions">Novidades do produto</button>
           <button className="ButtonFooterOptions">Perguntas frequentes</button>
         </div>
         <footer className="footer"></footer> */}
         {/* <Routes /> */}
-      </div>
     </div>
   );
 }

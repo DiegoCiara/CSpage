@@ -1,38 +1,39 @@
 
 .card.epta {
-  display: flex;
+  padding: 8%;
+  display: table;
   /* grid-template-columns: repeat(2, 15% 85%); */
   margin: 2%;
-  padding: 1rem;
-  width: 19.8ch;
   border-radius: 7px;
   background: rgba(var(--card-rgb), 0);
   border: 1px solid;
   border-color: #c1c1c1;
     /* transition: background 200ms, border 200ms; */
-  text-align: center;
-  justify-content: space-between;
-  width: 50vh;
-  height: 80vh;
+  text-align: left;
+  width: 90%;
+  height: 105%;
   background-color: #ffffff;
+  box-shadow: 2px 4px 8px -2px #989898;
 }
 
 .card.eventos {
-  display: flex;
+  padding: 8%;
+  padding-bottom: 0%;
+  display: table;
   /* grid-template-columns: repeat(2, 15% 85%); */
   margin: 2%;
-  padding: 1rem;
-  width: 19.8ch;
   border-radius: 7px;
   background: rgba(var(--card-rgb), 0);
   border: 1px solid;
   border-color: #c1c1c1;
     /* transition: background 200ms, border 200ms; */
-  text-align: center;
+  text-align: left;
   justify-content: space-between;
-  width: 50vh;
-  height: 80vh;
+  width: 90%;
+  height: 105%;
   background-color: #ffffff;
+  box-shadow: 2px 4px 8px -2px #979797;
+
 }
 
 
@@ -44,6 +45,22 @@
   width: 100%;
   height: 100%;
   border-radius: 11px;
+  
+
+}
+.icone1.epta{
+  background-color: transparent;
+  color: rgb(0, 93, 193);
+  height: 8%;
+  width: 15%;
+  margin-bottom: 5%;
+}
+.icone1.eventos{
+  background-color: transparent;
+  color: rgb(0, 93, 193);
+  height: 8%;
+  width: 15%;
+  margin-bottom: 5%;
 
 }
 .iconsCard{
@@ -63,34 +80,39 @@
 
 }
 .content{
-  padding-left: 5%;
   width: 100%;
   height: 100%;
   margin: 0%;
+  padding: 0%;
   /* background-color: #c1c1c1; */
 }
 
 .cardTitle{
   font-size: 18px;
   color: rgb(36, 36, 36);
+
 }
 .cardTitle.epta{
-  font-size: 40px;
+  font-size: 25px;
   color: rgb(36, 36, 36);
 }
 .cardTitle.eventos{
-  font-size: 40px;
+  font-size: 25px;
   color: rgb(36, 36, 36);
+
 }
 
 .cardSubtitle{
   font-size: 13px;
 }
 .cardSubtitle.epta{
-  font-size: 18px;
+  font-size: 15px;
+  height: auto;
+  margin-bottom: 30px;
 }
 .cardSubtitle.eventos{
-  font-size: 18px;
+  font-size: 20px;
+  height: 8%;
 }
 
 
@@ -108,22 +130,41 @@
   transition-duration: 0.3s;
   /* box-shadow: 0px 4px 4px 2px #e0e0e0; */
   margin-top: 2%;
-
+  margin-left: 2%;
 }
 
 .accessButton:hover {
   transition-duration: 0.3s;
-  background-color: rgb(47, 148, 255);
+  background-color: rgb(0, 99, 204);
   color: #ffffff;
   cursor: pointer;
 }
 
 .accessButton.epta{
-  font-size: 23px;
-  max-height: 70px;
+  background-color:  rgb(18, 196, 255);
+  border-radius: 5px;
+  font-size: 15px;
+  max-height: 45px;
+  width: 35%;
+
+  color: #ffffff;
+
 }
-
-
+.accessButton.eventos{
+  background-color:  rgb(18, 196, 255);
+  font-size: 15px;
+  border-radius: 5px;
+  max-height: 50px;
+  margin-top: 5%;
+  width: 60%;
+  color: #ffffff;
+}
+.accessButton.epta:hover{
+  background-color: rgb(0, 99, 204);
+}
+.accessButton.eventos:hover{
+  background-color: rgb(0, 99, 204);
+}
 @media (max-width: 700px) {
   .card {
     height: 37vh;
