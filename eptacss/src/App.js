@@ -2,9 +2,8 @@ import logo from './logo.png';
 import './App.css';
 import { MiniCard } from './components/Minicard';
 import { Card } from './components/Card';
-import { events, labels, talkUs } from './labels';
-import { FaAccessibleIcon, FaBeer } from 'react-icons/fa';
-import { EptaCs, Eventos, ExtraCard } from './components/Extracard';
+import { labels, talkUs } from './labels';
+import { EptaCs, Eventos } from './components/Extracard';
 
 function App() {
   return (
