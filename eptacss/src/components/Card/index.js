@@ -4,12 +4,12 @@ import './index.css';
 export const Card = ({ title, descricao, link }) => {
   return (
     
-    <div className="card">
-      <div className='iconsCard'> <FaRegHandPointer className='icone1'></FaRegHandPointer> </div>
-      <div className='content'>
-        <h2 className="cardTitle">{title}</h2>
-        <p className="cardSubtitle">{descricao}</p>
-        <button className="accessButton" onClick={() => console.log(link)}>
+    <div className="card main">
+      <div className='iconsCard main'> <FaRegHandPointer className='icone1'></FaRegHandPointer> </div>
+      <div className='content main'>
+        <h2 className="cardTitle main">{title}</h2>
+        <p className="cardSubtitle main">{descricao}</p>
+        <button className="accessButton main" onClick={() => console.log(link)}>
           Saber mais
         </button>
         </div>
