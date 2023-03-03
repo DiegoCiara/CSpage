@@ -1,60 +1,58 @@
-
-.card.mini{
+.card.mini {
   display: table-column;
   background-color: #ffffff;
   margin: 2%;
   width: 20%;
+  padding: 0%;
   border-radius: 7px;
   background: rgba(var(--card-rgb), 0);
   border: 1px solid;
   border-color: #c1c1c1;
-    /* transition: background 200ms, border 200ms; */
+  /* transition: background 200ms, border 200ms; */
   text-align: center;
   align-items: center;
   justify-content: space-between;
   height: 60%;
 }
 
-.content.mini{
+.content.mini {
+  background-color: #ffffff;
   justify-content: space-between;
   padding-left: 0%;
+  border-radius: 7px;
   width: 100%;
   height: 100%;
   margin: 0%;
-  padding: 0%;
+  padding: 5%;
 }
 
-.iconsCard.mini{
-  background-color: #ffff ;
-  color: blue ;
+.iconsCard.mini {
+  margin-top: 2%;
+  background-color: transparent;
+  color: blue;
 }
 
-.cardTitle.mini{
+.cardTitle.mini {
   text-align: center;
   font-size: 18px;
   color: rgb(36, 36, 36);
-  height: 50px;
-  
+  height: 20%;
 }
-.cardSubtitle.mini{
-  font-size: 13px;
-  height: 50px;
-}
-.accessButton.mini{
-  background-color:  rgb(160, 206, 255) ;
-  color:  rgb(0, 93, 193);
-  font-family: "Inter";
+.accessButton.mini {
+  background-color: rgb(160, 206, 255);
+  color: rgb(0, 93, 193);
+  font-family: 'Inter';
   font-size: 0.95rem;
   font-weight: 600;
-  width: 100%;
+  width: 50%;
   height: 25%;
   border: 2px;
   border-radius: 2px;
   border-color: #f3f2f2;
+  text-align: center;
   transition-duration: 0.3s;
   /* box-shadow: 0px 4px 4px 2px #e0e0e0; */
   margin-top: 2%;
-
 }
 
 .accessButton:hover {
@@ -64,19 +62,73 @@
   cursor: pointer;
 }
 
-
 @media (max-width: 700px) {
   .card {
     height: 37vh;
     width: 87%;
     margin-bottom: 15%;
   }
-  .cardTitle{
+  .cardTitle {
     font-size: 30px;
   }
-  .cardSubtitle{
+  .cardSubtitle {
     height: 15vh;
-   font-size: 15px; 
-   font-weight: 500;
+    font-size: 15px;
+    font-weight: 500;
   }
+}
+
+.accordion {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+.item label {
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1s solid gray;
+}
+
+.item ul {
+  width: 100%;
+  list-style: none;
+  overflow: hidden;
+  max-height: 0;
+  transition-duration: 0.5s;
+  border-bottom: 1px solid gray;
+  margin-bottom: 4%;
+
+}
+
+.item ul li {
+  width: 100%;
+  max-height: 0;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: aliceblue;
+  border-bottom: 1px solid gray;
+  transition-duration: 2s;
+  margin-bottom: 5%;
+}
+
+.item input {
+  display: none;
+}
+
+.item input:checked ~ ul {
+  height: auto;
+  max-height: 200vh;
+  transition-duration: 2s;
+}
+.contenttitleacordion{
+  
+  display: grid;
+  grid-template-columns:  repeat(2, 100%, 10%);
+
+}
+.titleacordion{
+  font-size: 20px;
+  font-weight: 600;
+  color:rgb(0, 93, 193);
 }

@@ -7,6 +7,8 @@ import { labels, talkUs } from './labels';
 import { EptaCs, Eventos } from './components/Extracard';
 import { FaAccessibleIcon } from 'react-icons/fa';
 import { SearchBar } from './components/SearchBar';
+import AccordionBody from 'react-bootstrap/esm/AccordionBody';
+import Accordion from 'react-bootstrap/Accordion';
 
 function App() {
   return (
@@ -66,52 +68,56 @@ function App() {
         </div>
       </div>
       <div className="container fourth">
-        <div className="title">
-          {/* teste do Accordion */}
+        <h1 className="subtitle third">Dúvidas frequentes</h1>
 
-          <h1 className="subtitle third">Dúvidas frequentes</h1>
-          <div class="accordions">
-            <div class="accordion-item">
-              <input
-                type="radio"
-                name="accordion"
-                checked="checked"
-                id="accordion-1"
-              />
-              <label for="accordion-1">Como entro em contato com a EPTA?</label>
-              <div class="accordion-content">Minha Empresa</div>
-            </div>
-            <div class="accordion-item">
-              <input type="radio" name="accordion" id="accordion-2" />
-              <label for="accordion-2">Como saber quais Treinamentos devo realizar?</label>
-              <div class="accordion-content">
-                Como saber quais Treinamentos devo realizar?
-              </div>
-            </div>
-            <div class="accordion-item">
-              <input type="radio" name="accordion" id="accordion-3" />
-              <label for="accordion-3">Como conversar com o Sucesso do Cliente pelo chat?</label>
-              <div class="accordion-content">
-                Como conversar com o Sucesso do Cliente pelo chat?
-              </div>
-            </div>
-            <div class="accordion-item">
-              <input type="radio" name="accordion" id="accordion-3" />
-              <label for="accordion-3">Como criar acesso ao DashBoard para outras pessoas da minha organização?</label>
-              <div class="accordion-content">
-                Como conversar com o Sucesso do Cliente pelo chat?
-              </div>
-            </div>
+        <div className="accordion">
+          <div className="item">
+            <input type="checkbox" id="check1" />
+            <label className="titleacordion" for="check1">
+              Como faço para utilizar o Naboo?
+            </label>
+            <ul>
+              <p href="www">
+                <div className="infoacordion">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Magni laborum harum atque nemo quas omnis molestiae ex sequi
+                  velit. Maiores minima inventore aliquid officia quidem rerum
+                  eos perspiciatis labore sint!
+                </div>
+              </p>
+            </ul>
           </div>
-        </div>
-        <div className="grid minicards">
-          {/* {talkUs.map((cardObj) => (
-            <MiniCard
-              title={cardObj.titulo}
-              descricao={cardObj.descricao}
-              link={cardObj.link}
-            />
-          ))} */}
+          <div className="item">
+            <input type="checkbox" id="check2" />
+            <label className="contenttitleacordion" for="check2">
+              <div className="titleacordion">
+                Como saber qual treinamento devo agendar?
+              </div>
+              <FaAccessibleIcon />
+            </label>
+            <ul>
+              <p href="www">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
+                laborum harum atque nemo quas omnis molestiae ex sequi velit.
+                Maiores minima inventore aliquid officia quidem rerum eos
+                perspiciatis labore sint!
+              </p>
+            </ul>
+          </div>
+          <div className="item">
+            <input type="checkbox" id="check3" />
+            <label className="titleacordion" for="check3">
+              Menu
+            </label>
+            <ul>
+              <p href="www">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
+                laborum harum atque nemo quas omnis molestiae ex sequi velit.
+                Maiores minima inventore aliquid officia quidem rerum eos
+                perspiciatis labore sint!
+              </p>
+            </ul>
+          </div>
         </div>
       </div>
       {/* <div className="footerOptions">
