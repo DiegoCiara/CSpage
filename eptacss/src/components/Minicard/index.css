@@ -83,10 +83,13 @@
   padding-right: 25%;
 }
 .item label {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(2, 98%);
   padding: 10px;
   cursor: pointer;
   border-bottom: 1s solid gray;
+  color: rgb(0, 93, 193);
+
 }
 
 .item ul {
@@ -95,8 +98,8 @@
   overflow: hidden;
   max-height: 0;
   transition-duration: 0.5s;
-  border-bottom: 1px solid gray;
-  margin-bottom: 4%;
+  border-bottom: 1px solid rgb(217, 217, 217);
+  margin-bottom: 2%;
 
 }
 
@@ -121,12 +124,7 @@
   max-height: 200vh;
   transition-duration: 2s;
 }
-.contenttitleacordion{
-  
-  display: grid;
-  grid-template-columns:  repeat(2, 100%, 10%);
 
-}
 .titleacordion{
   font-size: 20px;
   font-weight: 600;

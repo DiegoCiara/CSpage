@@ -5,10 +5,14 @@ import { MiniCard } from './components/Minicard';
 import { Card } from './components/Card';
 import { labels, talkUs } from './labels';
 import { EptaCs, Eventos } from './components/Extracard';
-import { FaAccessibleIcon } from 'react-icons/fa';
+import {
+  FaAngleDown,
+  FaFacebook,
+  FaInstagram,
+  FaLink,
+  FaLinkedin,
+} from 'react-icons/fa';
 import { SearchBar } from './components/SearchBar';
-import AccordionBody from 'react-bootstrap/esm/AccordionBody';
-import Accordion from 'react-bootstrap/Accordion';
 
 function App() {
   return (
@@ -73,8 +77,11 @@ function App() {
         <div className="accordion">
           <div className="item">
             <input type="checkbox" id="check1" />
-            <label className="titleacordion" for="check1">
-              Como faço para utilizar o Naboo?
+            <label for="check1">
+              <div className="titleacordion">
+                Como saber qual treinamento devo agendar?
+              </div>
+              <FaAngleDown />
             </label>
             <ul>
               <p href="www">
@@ -88,26 +95,36 @@ function App() {
             </ul>
           </div>
           <div className="item">
-            <input type="checkbox" id="check2" />
-            <label className="contenttitleacordion" for="check2">
+            <input className="contentacordion" type="checkbox" id="check2" />
+            <label for="check2">
               <div className="titleacordion">
                 Como saber qual treinamento devo agendar?
               </div>
-              <FaAccessibleIcon />
+              <FaAngleDown />
             </label>
             <ul>
               <p href="www">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
                 laborum harum atque nemo quas omnis molestiae ex sequi velit.
                 Maiores minima inventore aliquid officia quidem rerum eos
-                perspiciatis labore sint!
+                perspiciatis labore sint!Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Magni laborum harum atque nemo quas omnis
+                molestiae ex sequi velit. Maiores minima inventore aliquid
+                officia quidem rerum eos perspiciatis labore sint!Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit. Magni laborum
+                harum atque nemo quas omnis molestiae ex sequi velit. Maiores
+                minima inventore aliquid officia quidem rerum eos perspiciatis
+                labore sint!
               </p>
             </ul>
           </div>
           <div className="item">
             <input type="checkbox" id="check3" />
-            <label className="titleacordion" for="check3">
-              Menu
+            <label for="check3">
+              <div className="titleacordion">
+                Como saber qual treinamento devo agendar?
+              </div>
+              <FaAngleDown />
             </label>
             <ul>
               <p href="www">
@@ -120,11 +137,27 @@ function App() {
           </div>
         </div>
       </div>
-      {/* <div className="footerOptions">
-          <button className="ButtonFooterOptions">Novidades do produto</button>
-          <button className="ButtonFooterOptions">Perguntas frequentes</button>
+      <footer className="footer">
+        <div className="copy">
+          © EPTA Tecnologia 2021 - Todos os Direitos Reservados
         </div>
-        <footer className="footer"></footer> */}
+        <div className="socialLinks">
+          <a href="https://www.facebook.com/eptatecnologia?mibextid=LQQJ4d">
+            {' '}
+            <FaFacebook className="icone1 insta" />
+          </a>
+          <a
+            href="https://instagram.com/eptatecnologia?igshid=MDM4ZDc5MmU="
+          >
+            {' '}
+            <FaInstagram className="icone1 insta" />
+          </a>
+          <a href="https://www.linkedin.com/company/epta-tecnologia/">
+            {' '}
+            <FaLinkedin className="icone1 insta" />
+          </a>
+        </div>
+      </footer>
       {/* <Routes /> */}
     </div>
   );
