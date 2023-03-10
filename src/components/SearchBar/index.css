@@ -43,3 +43,19 @@
   color: white;
   transition-duration: 0.5s;
 }
+
+
+@media ( max-width: 700px) {
+
+  .searchButton{
+    color: transparent;
+
+  }
+  .bar{
+    width: 80%;
+  }
+  .content.search{
+    width: 90%;
+    height: 15vh;
+  }
+}
