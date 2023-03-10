@@ -39,6 +39,7 @@
   color: #7a7a7a;
   height: auto;
 }
+
 .accessButton{
   background-color:  rgb(160, 206, 255) ;
   color:  rgb(0, 93, 193);
@@ -70,12 +71,12 @@
     width: 87%;
     margin-bottom: 15%;
   }
-  .cardTitle{
-    font-size: 30px;
+  .cardTitle.info{
+    font-size: 1rem;
   }
-  .cardSubtitle{
+  .cardSubtitle.info {
     height: 15vh;
-   font-size: 15px; 
+   font-size: 0.8rem; 
    font-weight: 500;
   }
 }

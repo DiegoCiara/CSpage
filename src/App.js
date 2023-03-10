@@ -9,7 +9,6 @@ import {
   FaAngleDown,
   FaFacebook,
   FaInstagram,
-  FaLink,
   FaLinkedin,
 } from 'react-icons/fa';
 import { SearchBar } from './components/SearchBar';
@@ -18,14 +17,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className="header">
-          <img src={logo} className="logo" alt="logo" />
-          <div className="menu">
-            <p href=""> O que é o Naboo?</p>
-            <p href=""> Como funciona?</p>
-            <p href=""> Aprenda mais</p>
-            <p href=""> Fale conosco</p>
-          </div>
+        <img src={logo} className="logo" alt="logo" />
+        <div className="menu">
+          <p className='link Naboo' href=""> O que é o Naboo?</p>
+          <p  className='link Funciona' href=""> Como funciona?</p>
+          <p className='link Aprenda' href=""> Aprenda mais</p>
+          <p className='link Fale' href=""> Fale conosco</p>
         </div>
       </header>
       {/* <img src={logo} className="App-logo" alt="logo" /> */}
@@ -146,9 +143,7 @@ function App() {
             {' '}
             <FaFacebook className="icone1 insta" />
           </a>
-          <a
-            href="https://instagram.com/eptatecnologia?igshid=MDM4ZDc5MmU="
-          >
+          <a href="https://instagram.com/eptatecnologia?igshid=MDM4ZDc5MmU=">
             {' '}
             <FaInstagram className="icone1 insta" />
           </a>

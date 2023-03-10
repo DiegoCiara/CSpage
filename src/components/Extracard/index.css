@@ -1,45 +1,20 @@
 
-.card.epta {
+.card.extra {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  padding: 8%;
-  display: table;
-  /* grid-template-columns: repeat(2, 15% 85%); */
-  margin: 2%;
   border-radius: 7px;
   background: rgba(var(--card-rgb), 0);
   border: 1px solid;
   border-color: #c1c1c1;
-    /* transition: background 200ms, border 200ms; */
   text-align: left;
-  width: 90%;
-  height: 105%;
   background-color: #ffffff;
   box-shadow: 2px 4px 8px -2px #989898;
+
+  width:50vh;
+  height: 70vh;
+  
 }
-
-.card.eventos {
-  position: relative;
-  padding: 8%;
-  padding-bottom: 0%;
-  display: table;
-  /* grid-template-columns: repeat(2, 15% 85%); */
-  margin: 2%;
-  border-radius: 7px;
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid;
-  border-color: #c1c1c1;
-    /* transition: background 200ms, border 200ms; */
-  text-align: left;
-  justify-content: space-between;
-  width: 90%;
-  height: 105%;
-  background-color: #ffffff;
-  box-shadow: 2px 4px 8px -2px #979797;
-
-}
-
-
-
 
 .icone1{
   background-color: rgb(0, 93, 193);
@@ -50,36 +25,13 @@
   
  
 }
-.icone1.epta{
+.icone1.extra{
   background-color: transparent;
   color: rgb(0, 93, 193);
   height: 8%;
   width: 15%;
-  margin-bottom: 5%;
-}
-.icone1.eventos{
-  background-color: transparent;
-  color: rgb(0, 93, 193);
-  height: 8%;
-  width: 15%;
-  margin-bottom: 5%;
-
-}
-.iconsCard{
-  /* background-color: rgb(0, 93, 193);
-  width: 100%;
-  height: 23%;
-  margin: 0%;
-  text-align: center;
-  padding-top: 30%;
-  border-radius: 20px; */
-  padding: 8px;
-  background-color:rgb(0, 93, 193) ;
-  width: 90%;
-  height: 30%;
-  border-radius: 20px;
-
-
+  margin:5%;
+  margin-left: 0;
 }
 .content{
   width: 100%;
@@ -89,51 +41,20 @@
   /* background-color: #c1c1c1; */
 }
 
-.cardTitle{
-  font-size: 18px;
-  color: rgb(36, 36, 36);
-
-}
-.cardTitle.epta{
-  font-size: 25px;
+.cardTitle.extra{
+  font-size: 2rem;
   color: rgb(36, 36, 36);
 }
-.cardTitle.eventos{
-  font-size: 25px;
-  color: rgb(36, 36, 36);
 
-}
 
-.cardSubtitle{
-  font-size: 13px;
-}
-.cardSubtitle.epta{
+
+.cardSubtitle.extra{
   font-size: 15px;
   height: auto;
+  width:90%;
   margin-bottom: 30px;
 }
-.cardSubtitle.eventos{
-  font-size: 20px;
-  height: 8%;
-}
 
-
-.accessButton{
-  background-color:  rgb(160, 206, 255) ;
-  color:  rgb(0, 93, 193);
-  font-family: "Inter";
-  font-size: 0.95rem;
-  font-weight: 600;
-  width: 50%;
-  height: 25%;
-  border: 2px;
-  border-radius: 2px;
-  border-color: #f3f2f2;
-  transition-duration: 0.3s;
-  /* box-shadow: 0px 4px 4px 2px #e0e0e0; */
-  margin-top: 2%;
-  margin-left: 2%;
-}
 
 .accessButton:hover {
   transition-duration: 0.3s;
@@ -142,43 +63,38 @@
   cursor: pointer;
 }
 
-.accessButton.epta{
+.accessButton.extra{
   background-color:  rgb(18, 196, 255);
   border-radius: 5px;
   font-size: 15px;
   max-height: 45px;
   width: 35%;
+  margin-left: 2%;
 
   color: #ffffff;
 
 }
-.accessButton.eventos{
-  background-color:  rgb(18, 196, 255);
-  font-size: 15px;
-  border-radius: 5px;
-  max-height: 50px;
-  margin-top: 5%;
-  width: 60%;
-  color: #ffffff;
-}
-.accessButton.epta:hover{
+.accessButton.extra:hover{
   background-color: rgb(0, 99, 204);
 }
-.accessButton.eventos:hover{
+.accessB:hover{
   background-color: rgb(0, 99, 204);
 }
 @media (max-width: 700px) {
-  .card {
-    height: 37vh;
-    width: 87%;
+  .card.extra {
+    height:70vh;
+    width: 65vw;
     margin-bottom: 15%;
   }
-  .cardTitle{
-    font-size: 30px;
+  .cardTitle.extra{
+    font-size: 1rem;
   }
-  .cardSubtitle{
-    height: 15vh;
-   font-size: 15px; 
+  .cardSubtitle.extra{
+   font-size: 0.8rem; 
    font-weight: 500;
   }
+  .accessButton.extra{
+    width: 65%;
+  }
+  
 }

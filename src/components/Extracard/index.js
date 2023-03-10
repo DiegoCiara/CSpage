@@ -5,17 +5,17 @@ import './index.css';
 
 export const EptaCs = ({ title, descricao, link }) => {
   return (
-    <div className="card epta">
-      <FaRocket className='icone1 epta'></FaRocket>
+    <div className="card extra">
+      <FaRocket className='icone1 extra'></FaRocket>
       
-      <div className="content epta">
-        <h2 className="cardTitle epta">EPTA CS</h2>
-        <p className="cardSubtitle epta">
+      <div className="content extra">
+        <h2 className="cardTitle extra">EPTA CS</h2>
+        <p className="cardSubtitle extra">
           Área dedicada a nossos clientes, aqui você tocará sua jornda com
           autonomia e liberdade, implante a gestão da sua associação de forma
           prática e rápida
         </p>
-        <button className="accessButton epta" onClick={() => console.log(link)}>
+        <button className="accessButton extra" onClick={() => console.log(link)}>
           Começe já
         </button>
       </div>
@@ -26,14 +26,14 @@ export const EptaCs = ({ title, descricao, link }) => {
 export const Eventos = ({ dia, mes, title, descricao }) => {
   return (
     <div>
-      <div className="card eventos">
-        <FaRegCalendarAlt className='icone1 eventos'></FaRegCalendarAlt>
-        <div className="content eventos">
-        <p className="cardSubtitle eventos">
+      <div className="card extra">
+        <FaRegCalendarAlt className='icone1 extra'></FaRegCalendarAlt>
+        <div className="content extra">
+        <p className="cardSubtitle extra">
             Próximos eventos
           </p>
 
-          <h2 className="cardTitle eventos">FEVEREIRO, 2023</h2>
+          <h2 className="cardTitle extra">FEVEREIRO, 2023</h2>
           {events.map((cardObj) => (
             <Infocard
               dia={cardObj.dia}
@@ -43,7 +43,7 @@ export const Eventos = ({ dia, mes, title, descricao }) => {
             />
           ))}
 
-          <button className="accessButton eventos" 
+          <button className="accessButton extra" 
           // onClick={() => console.log(link)}
           >
             Veja todos os eventos

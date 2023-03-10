@@ -1,6 +1,7 @@
 import {  FaRegHandPointer } from 'react-icons/fa';
 import './index.css';
 
+
 export const Card = ({ title, descricao, link }) => {
   return (
     
