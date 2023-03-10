@@ -79,17 +79,20 @@
 
 
 @media (max-width: 700px) {
-  .card {
-    height: 37vh;
-    width: 87%;
+  .card.main {
+    height: 25vh;
+    width: 90%;
     margin-bottom: 15%;
   }
-  .cardTitle{
-    font-size: 30px;
+  .cardTitle.main{
+    font-size: 1.4rem
   }
   .cardSubtitle{
-    height: 15vh;
+    height: 10vh;
    font-size: 15px; 
    font-weight: 500;
+  }
+  .iconsCard.main{
+    height: 25%;
   }
 }
