@@ -80,7 +80,25 @@ export const events = [
     link: '',
   }
 ];
-  
+
+export const Pages = [
+  {
+    page: 'Fale conosco',
+    link : 'faleconosco'
+  },
+  {
+    page: 'Quem somos',
+    link : 'faleconosco'
+  },
+  {
+    page: 'Treinamentos',
+    link : 'faleconosco'
+  },
+  {
+    page: 'Saiba mais',
+    link : 'faleconosco'
+  },
+]
 
 // Plantão do sucesso
 // Novidades do Produto

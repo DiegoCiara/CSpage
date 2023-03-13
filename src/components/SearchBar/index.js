@@ -1,5 +1,6 @@
 import './index.css';
 import { useState } from 'react';
+import { Pages } from '../../labels';
 // import { TextField, LIstItemT } from '@material-ui/core';
 
 // const [data, setData] = useState;
@@ -30,32 +31,57 @@ import { useState } from 'react';
 //   setListVisible(false);
 // };
 
+export function SearchBar() {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [results, setResults] = useState([]);
+  const [searchResults, setSearchResults] = useState([]);
 
 
-export  function  SearchBar() {
+  const handleSearch = async () => {
+    try {
+      const response = await fetch(`./labels?q=${Pages}`);
+      const data = await response.json();
+      setResults(data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value);
+    if (event.target.value) {
+      const results = Pages.filter(
+        (pages) =>
+          pages.name.toLowerCase().includes(event.target.value.toLowerCase()) ||
+          pages.link.includes(event.target.value)
+      );
+      setSearchResults(results);
+    } else {
+      setSearchResults([]);
+    }
+  };
+
+
+  const handleInputChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
   return (
     <div className="content search">
-      <input className='bar'
-      label='text'
-      placeholder='Busque aqui o tópico do seu interesse'
-      ></input>
-      <button className='searchButton'>Pesquisar</button>
-      {/* <input
-        label="Pesquisar cliente"
+      <input
+        type="text"
         value={searchTerm}
         onChange={handleSearchChange}
-        fullWidthAAAAA
-        margin="normal"
+        className="bar"
       />
-      {searchResults.length > 0 && (
-        <ul>
-          {searchResults.map((Page) => (
-            <li key={Page.id} onClick={() => handleSelect(Page.id)}>
-            </li>
-          ))}
-        </ul>
-      )} */}
+      <button onClick={handleSearch}>Search</button>
+      <ul>
+        {Pages.map((result) => (
+          <li key={result.page} onClick={result.link}>
+            {result.page}
+          </li>
+        ))}
+      </ul>
 
     </div>
   );
-};
+}

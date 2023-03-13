@@ -12,6 +12,8 @@ import {
   FaLinkedin,
 } from 'react-icons/fa';
 import { SearchBar } from './components/SearchBar';
+import React, { useState } from 'react';
+
 
 function App() {
   return (
