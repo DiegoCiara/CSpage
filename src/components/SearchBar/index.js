@@ -1,6 +1,7 @@
 import './index.css';
 import { useState } from 'react';
 import { Pages } from '../../labels';
+import { FaSearch } from 'react-icons/fa';
 // import { TextField, LIstItemT } from '@material-ui/core';
 
 // const [data, setData] = useState;
@@ -67,21 +68,10 @@ export function SearchBar() {
 
   return (
     <div className="content search">
-      <input
-        type="text"
-        value={searchTerm}
-        onChange={handleSearchChange}
-        className="bar"
-      />
-      <button onClick={handleSearch}>Search</button>
-      <ul>
-        {Pages.map((result) => (
-          <li key={result.page} onClick={result.link}>
-            {result.page}
-          </li>
-        ))}
-      </ul>
-
+      <div className='cont search'>
+      <input className='inp search' placeholder='Busque aqui o tópico do seu interesse'/>
+      <FaSearch className='ico search'/>
+      </div>
     </div>
   );
 }
